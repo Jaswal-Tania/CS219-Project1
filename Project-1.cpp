@@ -2,9 +2,10 @@
 #include<fstream>
 using namespace std;
 
-fstream myfile;
+int main(){
+   fstream myfile;
    //myfile.open("Programming-Project-1.txt", ios::in);
-   myfile("Programming-Project-1.txt");
+   fstream myfile("Programming-Project-1.txt");
    string operation;
    unsigned int operand1;
    unsigned int operand2;
@@ -13,3 +14,4 @@ fstream myfile;
        operation = '+';
        cout << operand1 << operation << operand2 << endl;
    }
+}
