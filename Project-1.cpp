@@ -24,7 +24,13 @@ int main(){
 
     while(ss >> operation >> operand1 >> operand2){
         ss << hex;
-	
+        // uint32_t operand1 = ss.str();
+        // uint32_t operand2 = ss.str();
+        string operation = ss.str();
+
+        // operation = '+'
+        sum = operand1 + operand2;
+        cout << "The sum of " << operand1 << "and " << operand2 << "is " << sum << endl;
 	}
 	
 	myfile.close();
