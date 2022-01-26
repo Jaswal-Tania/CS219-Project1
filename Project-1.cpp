@@ -11,7 +11,7 @@ int main(){
     std::fstream myfile;
     myfile.open("Programming-Project-1.txt", std::ios::in);
     //std::ifstream myfile("Programming-Project-1.txt");
-    int value;
+    int sum;
     std::string operation;
     uint32_t operand1;
     uint32_t operand2;
@@ -22,8 +22,11 @@ int main(){
             std::cout << "File can not be open\n";
         }
 
-    myfile >> std::hex;
-    while(myfile >> operation >> operand1 >> operand2){
-         ss >> hex>> operand1 >>;
-   }
+    while(ss >> operation >> operand1 >> operand2){
+        ss << hex;
+	
+	}
+	
+	myfile.close();
+	return 0;
 }
