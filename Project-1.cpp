@@ -2,37 +2,46 @@
 #include <string>
 #include <sstream>
 #include<fstream>
-#include<iomanip>
+
 
 
 using namespace std;
 
 int main(){
-    std::fstream myfile;
-    myfile.open("Programming-Project-1.txt", std::ios::in);
-    //std::ifstream myfile("Programming-Project-1.txt");
-    int sum;
     std::string operation;
-    uint32_t operand1;
-    uint32_t operand2;
-    stringstream ss;
-   
+    uint32_t operand1, operand2, result;
+    string num;
+    char temp;
 
-    if (!myfile){  // print message if file is not open
-            std::cout << "File can not be open\n";
+    std::fstream myfile;
+    myfile.open("Project-1.txt"); // open the file
+
+    if(myfile){ // if file exist
+        while(myfile.good()){
+            stringstream ss1, ss2; 
+            myfile >> operation >> temp >> temp >> num;
+            ss1 << hex << num;
+            myfile >> temp >> temp >> num;
+            ss2 << hex << num;
+
+            //storing in an uint32_t variable
+            ss1 >> operand1;
+
+            //storing in an uint32_t variable
+            ss2 >> operand2;
+
+            //if operation is "ADD"
+            if(operation == "ADD"){
+            result = operand1 + operand2;
+            cout<< "0x" << hex << "The sum of " << operand1 << "and " << operand2 << "is" << result << endl;
+            }
         }
-
-    while(ss >> operation >> operand1 >> operand2){
-        ss << hex;
-        // uint32_t operand1 = ss.str();
-        // uint32_t operand2 = ss.str();
-        string operation = ss.str();
-
-        // operation = '+'
-        sum = operand1 + operand2;
-        cout << "The sum of " << operand1 << "and " << operand2 << "is " << sum << endl;
-	}
+        myfile.close(); 
+    }
 	
-	myfile.close();
+    else{
+        cout << "Could not open the file!" << endl;
+    }
+
 	return 0;
 }
