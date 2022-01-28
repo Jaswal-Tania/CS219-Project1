@@ -4,4 +4,4 @@
 
 # In this project, we are designing a machine language simulator which will implement the ADD operation.
 
-# For this project, I am using Visual Studio. 
+# For this project, I am using Linux. It is Ubuntu virtual box. 
