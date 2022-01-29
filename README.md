@@ -10,10 +10,10 @@ Install Ubuntu virtualbox- https://brb.nci.nih.gov/seqtools/installUbuntu.html
 > Install Linux
 
 ## Usage Example
-> Clone the Github URL into Terminal using **Git Clone** command
-> Open the folder **CS219-Project1** using **cd** command
-> Use **make main** command to compile 
-> To execute the file use **./main** into the terminal
+1. Clone the Github URL into Terminal using **Git Clone** command
+2. Open the folder **CS219-Project1** using **cd** command
+3. Use **make main** command to compile 
+4. To execute the file use **./main** into the terminal
 
 ## Meta
 Tania Jaswal - tjaswal@Nevada.unr.edu
