@@ -4,4 +4,23 @@ Project part 1 For Cs219 Computer Organization
 
 In this project, we are designing a machine language simulator which will implement the ADD operation.
 
-For this project, I am using Linux. It is the Ubuntu virtual box. The makefile allows us to compile using the **make** command in the terminal. This will compile the **main.cpp** file. 
+Install Ubuntu virtualbox- https://brb.nci.nih.gov/seqtools/installUbuntu.html
+
+## Installation
+> Install Linux
+
+## Usage Example
+> Clone the Github URL into Terminal using **Git Clone** command
+> Open the folder **CS219-Project1** using **cd** command
+> Use **make main** command to compile 
+> To execute the file use **./main** into the terminal
+
+## Meta
+Tania Jaswal - tjaswal@Nevada.unr.edu
+
+## Contributing
+1. Git clone
+2. Git add('Git add .')
+3. Git commit('git commit -m "comment"'
+4. Push to the branch ('git push')
+
